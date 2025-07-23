@@ -1,0 +1,518 @@
+/* Reset básico para remover margens e preenchimentos padrão do navegador */
+* {
+    box-sizing: border-box; /* Facilita o controle de tamanhos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(74, 224, 118); /* Fundo verde solicitado */
+    color: rgb(0, 0, 0); /* Cor do texto padrão solicitado */
+    display: flex; /* Adicionado para centralizar o conteúdo principal */
+    flex-direction: column; /* Adicionado para centralizar o conteúdo principal */
+    align-items: center; /* Adicionado para centralizar o conteúdo principal */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+header {
+    background-color: transparent; /* O fundo verde já é o do body */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Garante que o header ocupe a largura total */
+}
+
+.logo {
+    font-family: 'Nunito', sans-serif; /* Fonte Nunito */
+    font-size: 3.5em; /* Tamanho grande para destaque */
+    color: white; /* Cor branca para o nome "Bem Básica" */
+    margin-bottom: 20px; /* Espaço abaixo do nome */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Uma leve sombra para destaque */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox para alinhar os itens da navegação */
+    justify-content: center; /* Centraliza as opções */
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Linha divisória sutil */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Espaço acima das opções */
+}
+
+nav ul li {
+    margin: 0 25px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0); /* Cor do texto das opções */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out; /* Transição suave na cor */
+}
+
+nav ul li a:hover {
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto; /* Centraliza o conteúdo principal */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o conteúdo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que o main ocupe a largura total disponível dentro do max-width */
+}
+
+main p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    width: 100%; /* Garante que o footer ocupe a largura total */
+}
+
+/* Estilos para a imagem dinâmica (adicionados do código anterior) */
+.imagem-dinamica {
+    width: 207px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    border: 3px solid #007bff; /* Borda para destacar a imagem */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para um efeito 3D */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 20px; /* Adicionado para dar um pouco de espaço acima da imagem */
+    margin-bottom: 20px; /* Adicionado para dar um pouco de espaço abaixo da imagem */
+}
+
+.imagem-dinamica:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    border-color: #0056b3; /* Muda a cor da borda ao passar o mouse */
+}
+
+.imagem-dinamica:active {
+    transform: scale(0.98); /* Diminui ligeiramente a imagem ao clicar */
+    border-color: #004085; /* Muda a cor da borda ao clicar */
+}
+
+#part2
+
+/* Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Usando Poppins para o corpo do texto */
+    background-color: rgb(240, 255, 240); /* Um verde mais claro e suave para o fundo */
+    color: rgb(34, 34, 34); /* Cor do texto padrão mais escura para melhor legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    display: flex; /* Permite que o body use flexbox para alinhar seus filhos */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+/* --- Header Principal --- */
+.main-header {
+    background-color: rgb(74, 224, 118); /* Verde vibrante para o header */
+    color: white; /* Cor do texto no header */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    width: 100%; /* Ocupa toda a largura */
+    position: sticky; /* Fixa o header no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.header-content {
+    display: flex; /* Organiza o logo e a navegação lado a lado */
+    justify-content: space-between; /* Espaça logo e navegação */
+    align-items: center; /* Centraliza verticalmente */
+    max-width: 1200px; /* Largura máxima do conteúdo do header */
+    margin: 0 auto; /* Centraliza o conteúdo do header */
+    padding: 0 20px; /* Padding nas laterais */
+}
+
+.logo {
+    font-family: 'Nunito', sans-serif; /* Fonte Nunito para o logo */
+    font-size: 2.8em; /* Tamanho do logo ajustado */
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para o texto do logo */
+    margin: 0; /* Remove margem padrão */
+}
+
+.main-nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Coloca os itens do menu lado a lado */
+}
+
+.main-nav ul li {
+    margin-left: 30px; /* Espaçamento entre os itens do menu */
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 600; /* Mais encorpado */
+    font-size: 1.05em;
+    padding: 8px 15px; /* Preenchimento nos links */
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease; /* Transições suaves */
+    border-radius: 5px; /* Cantos arredondados nos links */
+}
+
+.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil no hover */
+    color: white; /* Mantém a cor do texto no hover */
+}
+
+/* --- Botões Reutilizáveis --- */
+.btn-primary {
+    display: inline-block; /* Permite definir largura/altura e espaçamento */
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições no hover */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de "levantar" no hover */
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #6c757d; /* Cinza suave */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Cinza mais escuro no hover */
+}
+
+/* --- Conteúdo Principal e Seções --- */
+main {
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante verticalmente */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding-top: 20px; /* Espaço para evitar que o conteúdo fique atrás do header fixo */
+}
+
+.section-padded {
+    padding: 60px 20px; /* Espaçamento interno das seções */
+    max-width: 1200px; /* Largura máxima para o conteúdo da seção */
+    margin: 0 auto; /* Centraliza a seção */
+    text-align: center;
+    background-color: white; /* Fundo branco para as seções de conteúdo */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+}
+
+.section-padded:first-of-type {
+    margin-top: 40px; /* Margem extra para a primeira seção após o banner */
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* --- Hero Banner (Banner Principal) --- */
+.hero-banner {
+    background-image: url('banner_image.jpg'); /* **COLOQUE SUA IMAGEM DE BANNER AQUI** */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    position: relative; /* Necessário para o pseudo-elemento */
+}
+
+.hero-banner::before { /* Pseudo-elemento para uma sobreposição escura */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 40% de opacidade */
+    z-index: 1; /* Garante que fique abaixo do conteúdo */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima da sobreposição */
+}
+
+.hero-banner p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para o texto do banner */
+}
+
+/* --- Galeria de Imagens (Seção de Produtos) --- */
+.galeria-imagens {
+    display: flex; /* Coloca os cartões de produto em linha */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se o conteúdo transbordar */
+    scroll-snap-type: x mandatory; /* Para rolagem suave e com "snap" para cada item */
+    -webkit-overflow-scrolling: touch; /* Melhor rolagem em dispositivos iOS */
+    gap: 25px; /* Espaçamento entre os cartões de produto */
+    padding: 20px 0; /* Preenchimento para a área de rolagem */
+    margin-bottom: 30px;
+    justify-content: flex-start; /* Alinha os itens ao início para a rolagem */
+    cursor: grab; /* Indica que o elemento é arrastável */
+    user-select: none; /* Impede que o texto seja selecionado ao arrastar */
+}
+
+/* Esconde a barra de rolagem para navegadores WebKit (Chrome, Safari, Edge) */
+.galeria-imagens::-webkit-scrollbar {
+    display: none; /* ESSENCIAL: Esconde a barra de rolagem */
+}
+
+/* Esconde a barra de rolagem para Firefox */
+.galeria-imagens {
+    scrollbar-width: none; /* ESSENCIAL: Esconde a barra de rolagem */
+}
+
+/* Adicione esta regra para mudar o cursor quando estiver arrastando */
+.galeria-imagens.active-drag {
+    cursor: grabbing;
+}
+
+/* Estilo para cada Cartão de Produto */
+.product-card {
+    display: flex;
+    flex-direction: column; /* Conteúdo do cartão em coluna (imagem, título, preço) */
+    align-items: center; /* Centraliza itens horizontalmente */
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado do link */
+    color: inherit; /* Herda a cor do texto do pai */
+    background-color: #fdfdfd; /* Fundo do cartão quase branco */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave para o cartão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições no hover */
+    width: 280px; /* Largura fixa para cada cartão de produto */
+    flex-shrink: 0; /* Impede que os cartões encolham para caber no espaço */
+    scroll-snap-align: start; /* Alinha o início do cartão ao ponto de snap da rolagem */
+    padding: 15px; /* Preenchimento interno do cartão */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Levanta o cartão no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra mais intensa no hover */
+}
+
+.product-card .imagem-dinamica { /* Estilo específico para a imagem dentro do cartão */
+    width: 100%; /* Imagem preenche a largura do cartão */
+    max-height: 250px; /* Altura máxima para imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 8px; /* Cantos arredondados para a imagem */
+    margin-bottom: 15px;
+    border: none; /* Remove a borda azul da imagem dinâmica para o card */
+    box-shadow: none; /* Remove a sombra da imagem dinâmica para o card */
+}
+
+.product-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #007bff; /* Cor azul para o preço */
+}
+
+/* --- Seção de Newsletter (Chamada para Ação) --- */
+.cta-newsletter {
+    background-color: rgb(74, 224, 118); /* Mesma cor vibrante do header */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 40px auto; /* Centraliza e adiciona margens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-newsletter h2 {
+    color: white; /* Título branco no fundo colorido */
+    margin-bottom: 20px;
+}
+
+.cta-newsletter p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.cta-newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre o input e o botão */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+}
+
+.cta-newsletter input[type="email"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 300px; /* Largura padrão do input */
+    max-width: 80%; /* Limita a largura em telas menores */
+    font-size: 1em;
+}
+
+.cta-newsletter button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #007bff; /* Cor azul para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-newsletter button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* --- Footer Principal --- */
+.main-footer {
+    background-color: #333; /* Fundo cinza escuro */
+    color: #eee; /* Texto cinza claro */
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto; /* Empurra o footer para a parte inferior da página */
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.main-footer .social-links {
+    margin-top: 15px; /* Espaçamento acima dos links sociais */
+}
+
+.main-footer .social-links a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: rgb(74, 224, 118); /* Cor verde no hover */
+}
+
+/* --- Responsividade (Media Queries) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Empilha logo e navegação */
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Empilha os itens do menu */
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .main-nav ul li {
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 2.2em;
+    }
+
+    .hero-banner {
+        padding: 80px 20px;
+        min-height: 300px;
+    }
+
+    .hero-banner p {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .section-padded {
+        padding: 40px 15px;
+    }
+
+    .galeria-imagens {
+        padding: 15px 10px; /* Ajuste o padding para dispositivos móveis */
+        justify-content: flex-start; /* Garante alinhamento para rolagem */
+    }
+
+    .product-card {
+        width: 220px; /* Diminui a largura dos cards para melhor visualização móvel */
+    }
+
+    .cta-newsletter form {
+        flex-direction: column; /* Empilha input e botão */
+        align-items: center;
+    }
+
+    .cta-newsletter input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .cta-newsletter button[type="submit"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .main-nav ul li a {
+        font-size: 0.95em;
+        padding: 5px 10px;
+    }
+
+    .product-card {
+        width: 180px; /* Ainda menor em telas muito pequenas */
+    }
+
+    .hero-banner {
+        padding: 60px 15px;
+    }
+
+    .hero-banner p {
+        font-size: 1.2em;
+    }
+}
