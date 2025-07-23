@@ -516,3 +516,8 @@ h2 {
         font-size: 1.2em;
     }
 }
+/* No seu staly.css */
+.main-nav ul li a i,
+.botao-instagram i {
+    margin-right: 5px; /* Adiciona um pequeno espaço à direita do ícone */
+}
