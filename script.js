@@ -52,16 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
         const walk = (x - startX) * 1;
         gallery.scrollLeft = scrollLeft - walk;
     });
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("bem-basica.dados"); // Mude para o nome da sua planilha
-  var data = e.parameter;
-  var row = [
-    data.nome,
-    data.email,
-    data.assunto,
-    data.mensagem
-  ];
-  sheet.appendRow(row);
-  return ContentService.createTextOutput("Dados salvos com sucesso!").setMimeType(ContentService.MimeType.TEXT);
-}
-});
+
+
